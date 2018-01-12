@@ -1,0 +1,9 @@
+os: osx
+language: generic
+install:
+  - . ./install-tex.sh
+script:
+  - latex -v
+  - tlmgr --version
+  - ./tlmgr.sh install collection-langjapanese
+  - platex -v
