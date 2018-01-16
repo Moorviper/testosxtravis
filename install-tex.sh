@@ -3,6 +3,8 @@
 set -e
 
 DIRNAME=tl-`date +%Y_%m_%d_%H_%M_%S`
+# maybe fix error: /Users/travis/.rvm/scripts/functions/support: line 57: shell_session_update: command not found
+rvm get stable
 
 echo "make the install directory: $DIRNAME"
 mkdir $DIRNAME
